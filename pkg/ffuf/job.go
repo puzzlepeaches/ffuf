@@ -101,7 +101,7 @@ func (j *Job) Start() {
 	j.RunningJob = true
 	//Show banner if not running in silent mode
 	if !j.Config.Quiet {
-		j.Output.Banner()
+	//	j.Output.Banner()
 	}
 	// Monitor for SIGTERM and do cleanup properly (writing the output files etc)
 	j.interruptMonitor()

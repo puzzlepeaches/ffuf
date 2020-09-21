@@ -130,24 +130,6 @@ func Usage() {
 		section.PrintSection(max_length, false)
 	}
 
-	// Usage examples.
-	fmt.Printf("EXAMPLE USAGE:\n")
-
-	fmt.Printf("  Fuzz file paths from wordlist.txt, match all responses but filter out those with content-size 42.\n")
-	fmt.Printf("  Colored, verbose output.\n")
-	fmt.Printf("    ffuf -w wordlist.txt -u https://example.org/FUZZ -mc all -fs 42 -c -v\n\n")
-
-	fmt.Printf("  Fuzz Host-header, match HTTP 200 responses.\n")
-	fmt.Printf("    ffuf -w hosts.txt -u https://example.org/ -H \"Host: FUZZ\" -mc 200\n\n")
-
-	fmt.Printf("  Fuzz POST JSON data. Match all responses not containing text \"error\".\n")
-	fmt.Printf("    ffuf -w entries.txt -u https://example.org/ -X POST -H \"Content-Type: application/json\" \\\n")
-	fmt.Printf("      -d '{\"name\": \"FUZZ\", \"anotherkey\": \"anothervalue\"}' -fr \"error\"\n\n")
-
-	fmt.Printf("  Fuzz multiple locations. Match only responses reflecting the value of \"VAL\" keyword. Colored.\n")
-	fmt.Printf("    ffuf -w params.txt:PARAM -w values.txt:VAL -u https://example.org/?PARAM=VAL -mr \"VAL\" -c\n\n")
-
-	fmt.Printf("  More information and examples: https://github.com/ffuf/ffuf\n\n")
 }
 
 func strInSlice(val string, slice []string) bool {

@@ -13,10 +13,7 @@ import (
 )
 
 const (
-	BANNER_HEADER = `
-	
-`
-	BANNER_SEP = "________________________________________________"
+
 )
 
 type Stdoutput struct {

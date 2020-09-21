@@ -134,7 +134,7 @@ func (s *Stdoutput) Banner() error {
 	for _, f := range s.config.Filters {
 		printOption([]byte("Filter"), []byte(f.Repr()))
 	}
-	fmt.Printf("%s\n\n", BANNER_SEP)
+//	fmt.Printf("%s\n\n", BANNER_SEP)
 	return nil
 }
 

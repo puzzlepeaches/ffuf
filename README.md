@@ -20,3 +20,8 @@ go get -u -v github.com/puzzlepeaches/ffuf
 ```
 
 Maybe use this at a later point to store my one liners and stuff like that.
+
+Todo:
+
+* Add a newline when starting to ffuf
+* Try to add a flag to choose between some user-agents instead of hard setting it

@@ -43,7 +43,7 @@ func NewStdoutput(conf *ffuf.Config) *Stdoutput {
 }
 
 func (s *Stdoutput) Banner() error {
-	fmt.Printf("%s\n       v%s\n%s\n\n", BANNER_HEADER, ffuf.VERSION, BANNER_SEP)
+	fmt.Printf("%s\n       v%s\n%s\n\n\n\n")
 	printOption([]byte("Method"), []byte(s.config.Method))
 	printOption([]byte("URL"), []byte(s.config.Url))
 
